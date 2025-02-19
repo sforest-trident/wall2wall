@@ -1,0 +1,38 @@
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50vw, 1fr));
+    grid-template-rows: repeat(2, minmax(50vw, 1fr));
+
+    .fpg{
+        &__item{
+            position: relative;
+            overflow: hidden;
+        }
+
+        &__wrapper{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            
+        }
+        
+        &__title{
+            position: absolute;
+            bottom: 5rem;
+            left: -50px;
+            transform: rotate(-90deg);
+            font-family: var(--e-global-typography-h1-font-family);
+            font-weight: var(--e-global-typography-h1-font-weight);
+            color: white;
+            font-size: clamp(16px, 3vw, 24px);
+            text-transform: uppercase;
+        }
+
+        &__img{
+            height: 50vw;
+        }
+        
+    }
+
+
+}

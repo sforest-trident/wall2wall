@@ -1,0 +1,37 @@
+﻿.site-header {
+	display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(255,255,255, 0.5);
+    
+    .inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+
+    
+    .header{
+        &__logo{
+            img{
+                width: 200px;
+            }
+        }
+
+        &__nav{
+            .menu-main-menu-container{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.section.feature-quick-links{
+
+}
+
+.feature-quick-links{
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 1px;
+    background: map-get($site-colours, 'd-grey-blue');
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.075), -4px 2px 4px rgba(0,0,0,0.075);
+    position: relative;
+    top: -3rem;
+    z-index: 101;
+
+
+    .fql{
+        &__item{
+            padding: 1rem;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+
+            
+
+            .service{
+                &-icon{
+                    display: flex;
+                    img{
+                        width: 50px;
+                    }
+                }
+
+                &-title{
+                    font-family: var(--e-global-typography-h1-font-family);
+                    font-weight: 600;
+                    color: map-get($site-colours, 'm-blue');
+                    text-transform: uppercase;
+                    font-size: 0.75rem;
+                    line-height: 1rem;
+                }
+            }
+        }
+    }
+}

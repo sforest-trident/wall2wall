@@ -1,0 +1,78 @@
+﻿// -- Variables.css
+// This is essentially anything that is a variable in the CSS, such as colours, fonts, breakpoints, etc.
+
+// Colour Palette
+$site-colours: ( 
+    'primary': #1D3E07,
+    'secondary': #54595F,
+    'text': #000,
+    'accent': #50991F,
+    'blue': #001653,
+    'm-blue': #347AF6,
+    'l-blue': #347AF6,
+    'd-grey-blue': #001653,
+    'white': white,
+    'black': black
+);
+
+
+$site-fonts: (
+    'body': "'Poppins', sans-serif",
+    'heading': "'Inter', sans-serif"
+);
+
+
+$site-typography: ( 
+    'text-font-family': map-get($site-fonts, 'body'),
+    'text-font-size': 16px,
+    'text-font-weight': 400,
+    'text-line-height': 1.75rem,
+
+    'h1-font-family': map-get($site-fonts, 'heading'),
+    'h1-font-size': 30px,
+    'h1-font-weight': 600,
+    'h1-line-height': 2.5rem,
+    'h1-font-size_lg': 60px,
+    'h1-line-height_lg': 3rem,
+    
+    'h2-font-family': map-get($site-fonts, 'heading'),
+    'h2-font-size': 38px,
+    'h2-line-height': 3rem,
+    'h2-font-weight': 800,
+    'h2-font-size_lg': 50px,
+    'h2-line-height_lg': 3rem,
+    
+);
+
+
+//SASS Variables
+$body-text-color: #000;
+$body-bg-color: #fff;
+
+$breakpoint-h-gutter__base: 2rem;
+$breakpoint-h-gutter__md: 3rem;
+$breakpoint-h-gutter__lg: 3rem;
+$breakpoint-h-gutter__xl: $breakpoint-h-gutter__lg;
+
+$container-m-width: 1240px;
+
+// ======================================
+
+// Breakpoints
+$sm: 361px;
+$md: 768px;
+$lg: 993px;
+$xl: 1367px;
+$xxl: 1919px;
+
+$sm-down: max-width ($sm - 1);
+$md-down: max-width ($md - 1); 
+$lg-down: max-width ($lg - 1);
+$xl-down: max-width ($xl - 1);
+
+$portrait: (orientation portrait);
+$landscape: (orientation landscape);
+
+
+// Custom / Theme specific
+

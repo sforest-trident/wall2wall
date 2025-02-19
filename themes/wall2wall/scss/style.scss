@@ -1,0 +1,79 @@
+/**
+ * Theme Name:        Wall2Wall Plastering
+ * Description:       Bespoke WP theme for Wall2Wall Plastering Ltd.
+ * Version:           1.0.0
+ * Author:            Trident Marketing Anglia Ltd
+ * Author URI:        https://tridentmarketinguk.com
+ * Tags:              classic
+ * Text Domain:       wall2wall
+ * Domain Path:       /assets/lang
+ * Tested up to:      6.7
+ * Requires at least: 6.7
+ * Requires PHP:      8.1
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+
+ // Import vendor files
+//@import '../lib/bootstrap/bootstrap.scss';
+
+@use "_core/_variables" as *;
+
+:root {
+    // Find the root values for these in _variables.scss
+    --e-global-color-primary: #{map-get($site-colours, 'primary')};
+    --e-global-color-secondary: #{map-get($site-colours, 'secondary')};
+    --e-global-color-text: #{map-get($site-colours, 'text')};
+    --e-global-color-accent: #{map-get($site-colours, 'accent')};
+    --e-global-color-white: white;
+    
+    --e-global-typography-text-font-family: #{map-get($site-typography, 'text-font-family')};
+    --e-global-typography-text-font-size: #{map-get($site-typography, 'text-font-size')};
+    --e-global-typography-text-font-weight: #{map-get($site-typography, 'text-font-weight')};
+    --e-global-typography-text-line-height: #{map-get($site-typography, 'text-line-height')};
+    
+    // H1 / Primary heading
+  --e-global-typography-h1-font-family: #{map-get($site-typography, 'h1-font-family')};
+  --e-global-typography-h1-font-weight: #{map-get($site-typography, 'h1-font-weight')};
+  --e-global-typography-h1-font-size: #{map-get($site-typography, 'h1-font-size')};
+  --e-global-typography-h1-line-height: #{map-get($site-typography, 'h1-line-height')};
+  --e-global-typography-h1-font-size_lg: #{map-get($site-typography, 'h1-font-size_lg')};
+  --e-global-typography-h1-line-height_lg: #{map-get($site-typography, 'h1-line-height_lg')};
+ 
+    // H2 / Primary heading
+    --e-global-typography-h2-font-family: #{map-get($site-typography, 'h2-font-family')};
+    --e-global-typography-h2-font-weight: #{map-get($site-typography, 'h2-font-weight')};
+    --e-global-typography-h2-font-size: #{map-get($site-typography, 'h2-font-size')};
+    --e-global-typography-h2-line-height: #{map-get($site-typography, 'h2-line-height')};
+    --e-global-typography-h2-font-size_lg: #{map-get($site-typography, 'h2-font-size_lg')};
+    --e-global-typography-h2-line-height_lg: #{map-get($site-typography, 'h2-line-height_lg')};
+  
+  --e-global-sm-viewport_gutter-v: 35px;
+  --e-global-sm-viewport_gutter-h: 3rem;
+}
+
+@import "_core/_mixins";
+@import "_vendor/_breakpoint";
+@import "_vendor/normalize";
+
+// Core
+@import "_core/_breakpoints";
+@import "_core/_typography";
+@import "_core/_layout";
+@import "_core/_core";
+
+// Components
+@import "_components/_header";
+@import "_components/_buttons";
+@import "_components/_footer";
+@import "_components/_sections";
+@import "_components/_hero";
+@import "_components/_icons";
+@import "_components/_nav";
+@import "_components/_feature-quick-links";
+@import "_components/features-grid";
+
+// Pages
+@import "_pages/home";
+

@@ -1,0 +1,53 @@
+@mixin container(
+	$h-gutter__base: $breakpoint-h-gutter__base, 
+	$h-gutter__md: $breakpoint-h-gutter__md,
+	$h-gutter__lg: $breakpoint-h-gutter__lg,
+	$h-gutter__xl: $breakpoint-h-gutter__xl,
+
+	$v-gutter__base: false, 
+	$v-gutter__md: false,
+	$v-gutter__lg: false,
+	$v-gutter__xl: false
+){
+
+	padding-left: $h-gutter__base;
+	padding-right: $h-gutter__base;
+
+	@if($v-gutter__base) {
+		padding-top: $v-gutter__base;
+		padding-bottom: $v-gutter__base;
+	}
+
+	@include breakpoint($md) {
+		padding-left: $h-gutter__md;
+		padding-right: $h-gutter__md;
+
+		@if($v-gutter__md) {
+			padding-top: $v-gutter__md;
+			padding-bottom: $v-gutter__md;
+		}
+	}
+
+	@include breakpoint($lg) {
+		padding-left: $h-gutter__lg;
+		padding-right: $h-gutter__lg;
+
+		@if($v-gutter__lg) {
+			padding-top: $v-gutter__lg;
+			padding-bottom: $v-gutter__lg;
+		}
+	}
+
+	@include breakpoint($xl) {
+		max-width: $container-m-width;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		padding-left: $h-gutter__xl;
+		padding-right: $h-gutter__xl;
+
+		@if($v-gutter__xl) {
+			padding-top: $v-gutter__xl;
+			padding-bottom: $v-gutter__xl;
+		}
+	}
+}

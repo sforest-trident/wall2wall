@@ -1,0 +1,54 @@
+﻿
+
+// -------
+@import url('https://fonts.cdnfonts.com/css/inter'); // Inter font (CDN)
+@import url('https://fonts.cdnfonts.com/css/poppins'); // Poppins font (CDN)
+
+
+@mixin _h2{
+	font-family: var(--e-global-typography-h2-font-family);
+    font-weight: var(--e-global-typography-h2-font-weight);
+	font-size: var(--e-global-typography-h2-font-size);
+	line-height: var(--e-global-typography-h2-line-height);
+}
+
+@mixin _stacked-heading{
+	display: flex;
+	flex-direction: column;
+
+	text-transform: uppercase;
+	font-family: var(--e-global-typography-h1-font-family);
+	font-weight: 600;
+	letter-spacing: 1px;
+
+	.top-line{
+		font-size: 0.75rem;
+		font-weight: 400;
+		letter-spacing: 2px;
+	}
+
+	.bottom-line{
+		
+	}
+}
+
+// -------
+h1 {
+    font-family: var(--e-global-typography-h1-font-family);
+    font-weight: var(--e-global-typography-h1-font-weight);
+	font-size: var(--e-global-typography-h1-font-size);
+	line-height: var(--e-global-typography-h1-line-height);
+	text-transform: uppercase;
+
+  @include breakpoint($md){
+	font-size: var(--e-global-typography-h1-font-size_lg);
+	line-height: var(--e-global-typography-h1-line-height_lg);
+  }
+}
+
+h2{
+	@include _h2();
+}
+
+
+

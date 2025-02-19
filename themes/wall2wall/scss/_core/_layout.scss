@@ -1,0 +1,47 @@
+﻿* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $body-bg-color;
+	color: $body-text-color; //--var(body-color);
+	position: relative;
+	overflow-x: hidden;
+	font-family: var(--e-global-typography-text-font-family);
+	font-size: var(--e-global-typography-text-font-size);
+	font-weight: var(--e-global-typography-text-font-weight);
+	line-height: var(--e-global-typography-text-line-height);
+}
+
+
+.svg-sprite {
+	display: none;
+}
+
+.site{
+	position: relative;
+}
+
+.container {
+	@include container();
+}
+
+
+
+main {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+
+	@include breakpoint($md-down) {
+		//padding-top: 5rem;
+	}
+
+	@include breakpoint($md) {
+		//padding-top: 8rem;
+	}
+
+	@include breakpoint($lg) {
+		//padding-top: 4rem;
+	}
+}
