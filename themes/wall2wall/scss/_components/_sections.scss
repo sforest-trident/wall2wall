@@ -84,15 +84,13 @@
                     gap: var(--gap);
                     min-width: 100%;
                     animation: scroll-x var(--duration) linear infinite;
-                    }
+                }
                 
                 &__item {
                     display: grid;
                     place-items: center;
                     width: var(--size);
-                    aspect-ratio: 16/9;
-                    padding: calc(var(--size) / 10);
-                    border-radius: 0.5rem;
+                    @include padding-x(calc(var(--size) / 10));
     
                     a:hover{
                         animation-play-state: paused;
@@ -146,6 +144,40 @@
     // .section--featured-projects
     &--featured-projects{
         
+    }
+
+    &--incentives-block{
+        .inner{
+            @include container($h-gutter__base: 40px);
+            @include padding-y(2rem);
+        }
+
+        .ib{
+            &__heading{
+                @include _stacked-heading();
+
+                .bottom-line{
+                    font-size: 1.5rem;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    &--reviews{
+        .inner{
+            @include container($h-gutter__base: 40px);
+            @include padding-y(2rem);
+        }
+
+        .rv{
+            &__heading{
+                @include _stacked-heading2();
+                
+                font-size: 1.5rem;
+                font-weight: 800;
+            }
+        }
     }
 
 }

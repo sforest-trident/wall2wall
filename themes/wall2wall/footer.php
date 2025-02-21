@@ -15,16 +15,17 @@
 		<section class="section__upper-footer bg-blue text-white">
 			<div class="inner">	
 				<div class="uf-col">
-					<div class="uf__image-block">
-						<img src="" alt="Gallery Image 1" />
+					<div class="uf__logo-block">
+						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/w2w-logo.png" />
 					</div>
 					<div class="uf__content-block">
 						<p>WALL2WALL Plastering are a specialist plastering service based in Suffolk and covering East Anglia</p>
 					</div>
 					<div class="uf__socials-block">
-						<ul>
-							<li><a href="#"><i class="icon__facebook">f</i></a></li>
-							<li><a href="#"><i class="icon__linkedin">li</i></a></li>
+						<span class="sb__title">Follow Us:</span>
+						<ul class="sb__items">
+							<li class="sb__item"><a href="#" class="sb__item-link"><i class="fab fa-facebook-f icon__facebook"></i></a></li>
+							<li class="sb__item"><a href="#" class="sb__item-link"><i class="fab fa-linkedin-in icon__linkedin"></i></a></li>
 						</ul>
 					</div>
 				</div>

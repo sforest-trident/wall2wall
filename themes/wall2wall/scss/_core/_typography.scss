@@ -4,6 +4,7 @@
 @import url('https://fonts.cdnfonts.com/css/inter'); // Inter font (CDN)
 @import url('https://fonts.cdnfonts.com/css/poppins'); // Poppins font (CDN)
 
+$top-line-placeholder: 'Wall2Wall Plastering';
 
 @mixin _h2{
 	font-family: var(--e-global-typography-h2-font-family);
@@ -22,6 +23,27 @@
 	letter-spacing: 1px;
 
 	.top-line{
+		font-size: 0.75rem;
+		font-weight: 400;
+		letter-spacing: 2px;
+	}
+
+	.bottom-line{
+		
+	}
+}
+
+@mixin _stacked-heading2($top-line: var(--e-global-site-title)){
+	display: flex;
+	flex-direction: column;
+
+	text-transform: uppercase;
+	font-family: var(--e-global-typography-h1-font-family);
+	font-weight: 600;
+	letter-spacing: 1px;
+
+	&:before{
+		content: $top-line;
 		font-size: 0.75rem;
 		font-weight: 400;
 		letter-spacing: 2px;

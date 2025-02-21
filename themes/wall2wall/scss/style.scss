@@ -27,6 +27,7 @@
     --e-global-color-text: #{map-get($site-colours, 'text')};
     --e-global-color-accent: #{map-get($site-colours, 'accent')};
     --e-global-color-white: white;
+    --e-global-site-title: 'Wall2Wall Plastering';
     
     --e-global-typography-text-font-family: #{map-get($site-typography, 'text-font-family')};
     --e-global-typography-text-font-size: #{map-get($site-typography, 'text-font-size')};
@@ -56,6 +57,8 @@
 @import "_core/_mixins";
 @import "_vendor/_breakpoint";
 @import "_vendor/normalize";
+//@import "_vendor/font-awesome-6.7.2-web/all.min.css";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
 
 // Core
 @import "_core/_breakpoints";
@@ -63,7 +66,7 @@
 @import "_core/_layout";
 @import "_core/_core";
 
-// Components
+// Components 
 @import "_components/_header";
 @import "_components/_buttons";
 @import "_components/_footer";
@@ -73,6 +76,8 @@
 @import "_components/_nav";
 @import "_components/_feature-quick-links";
 @import "_components/features-grid";
+@import "_components/incentives-block";
+@import "_components/image-grid";
 
 // Pages
 @import "_pages/home";

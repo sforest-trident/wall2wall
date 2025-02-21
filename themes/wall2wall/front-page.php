@@ -66,7 +66,7 @@ get_header();
 			</div>
 		</section>
 
-		<section class="section--client-grid image-grid">
+		<section class="section--client-grid image-grid mb-2">
 			<div class="inner">
 			<div class="marquee">
             	<ul class="mq__group">
@@ -105,7 +105,7 @@ get_header();
 			</div>
 		</section>
 		
-		<section class="section--featured-projects">
+		<section class="section--featured-projects mb-2">
 			<div class="inner">
 				<ul class="features-grid image-grid">
 					<li class="fpg__item grid-item">
@@ -137,38 +137,40 @@ get_header();
 		</section>
 
 		<section class="section--incentives-block bg-blue text-white">
-			<div class="inner">
-				<div class="ib__heading">
-					<span class="top-line">Wall2Wall Plastering</span>
-					<span class="bottom-line">Why Choose Us?</span>
+			<div class="inner incentives-block">
+				<div class="ib__col">
+					<div class="ib__heading">
+						<span class="top-line">Wall2Wall Plastering</span>
+						<span class="bottom-line">Why Choose Us?</span>
+					</div>
+					<div class="ib__content">
+						<p>Trusting your plastering services to us means more than just a beautifully finished wall. As the professionals’ choice, we pride ourselves on our wealth of experience, skilled team, and commitment to using only top-quality materials. We work with the utmost professionalism, always respecting your time, property, and budget.</p>
+					</div>
 				</div>
-				<div class="ib__content">
-					<p>Trusting your plastering services to us means more than just a beautifully finished wall. As the professionals’ choice, we pride ourselves on our wealth of experience, skilled team, and commitment to using only top-quality materials. We work with the utmost professionalism, always respecting your time, property, and budget.</p>
-				</div>
-				<div class="ib_feature-list">
-					<ul>
-						<li>Reliable</li>
-						<li>Experienced</li>
-						<li>Top-quality materials</li>
-						<li>Tailored Solutions</li>
-						<li>Quick Turnaround Time</li>
+				<div class="ib__col">
+					<ul class="ib__feature-list">
+						<li class="ib__feature-list-item">Experienced</li>
+						<li class="ib__feature-list-item">Top-quality materials</li>
+						<li class="ib__feature-list-item">Tailored Solutions</li>
+						<li class="ib__feature-list-item">Quick Turnaround Time</li>
 					</ul>
 				</div>
 			</div>
 		</section>
 
-		<section class="section__reviews google-reviews">
+		<section class="section--reviews google-reviews">
 			<div class="inner">
+				<div class="rv__heading text-blue">Testimonials</div>
 				<div>[Reviews Placeholder]</div>
 			</div>
 		</section>
 
-		<section class="section--image-grid image-grid row-grid">
-			<div class="inner">
-				<div class="ig__item grid__item"><img src="<?php echo get_template_directory_uri(); ?>/images/home-image1.jpg" alt="Gallery Image 1" /></div>
-				<div class="ig__item grid-item"><img src="<?php echo get_template_directory_uri(); ?>/images/home-image2.jpg" alt="Gallery Image 2" /></div>
-				<div class="ig__item grid-item"><img src="<?php echo get_template_directory_uri(); ?>/images/home-image1.jpg" alt="Gallery Image 1" /></div>
-				<div class="ig__item grid-item"><img src="<?php echo get_template_directory_uri(); ?>/images/home-image2.jpg" alt="Gallery Image 2" /></div>
+		<section class="section--image-grid mb-2">
+			<div class="inner image-grid row-grid">
+				<div class="ig__item grid__item"><img class="fpg__img" src="<?php echo get_template_directory_uri(); ?>/images/home-img2.jpg" alt="" /></div>
+				<div class="ig__item grid__item"><img class="fpg__img" src="<?php echo get_template_directory_uri(); ?>/images/home-img2.jpg" alt="" /></div>
+				<div class="ig__item grid__item"><img class="fpg__img" src="<?php echo get_template_directory_uri(); ?>/images/home-img2.jpg" alt="" /></div>
+				<div class="ig__item grid__item"><img class="fpg__img" src="<?php echo get_template_directory_uri(); ?>/images/home-img2.jpg" alt="" /></div>
 			</div>
 		</section>
 
