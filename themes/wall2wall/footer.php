@@ -16,10 +16,10 @@
 			<div class="inner">	
 				<div class="uf-col">
 					<div class="uf__logo-block">
-						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/w2w-logo.png" />
+						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/w2w-logo_new.png" />
 					</div>
 					<div class="uf__content-block">
-						<p>WALL2WALL Plastering are a specialist plastering service based in Suffolk and covering East Anglia</p>
+						<p>WALL2WALL are a specialist plastering service based in Suffolk and covering East Anglia</p>
 					</div>
 					<div class="uf__socials-block">
 						<span class="sb__title">Follow Us:</span>

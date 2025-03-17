@@ -25,8 +25,8 @@ get_header();
 			<div class="inner col-wrapper">
 				<div class="content__wrapper col">
 					<?php /*
-					<h3 class="content__heading"><span class="top-line text-m-blue">Welcome to</span><span class="bottom-line">Wall2Wall Plastering</h3>
-					<p class="about-description">Based in Suffolk and covering East Anglia, Wall2Wall Plastering is a specialist plastering service delivering top-quality plastering and dry lining services for over 16 years. As the professionals’ choice, we cater to the commercial sector, offering a complete range of services from screeding, dry lining, insulating, coving, decorating, to wall removals. Upholding our commitment to superior workmanship, customer satisfaction, and timely delivery, we consistently set ourselves apart. Experience the Wall2Wall Plastering difference today and allow us to exceed your expectations.</p>
+					<h3 class="content__heading"><span class="top-line text-m-blue">Welcome to</span><span class="bottom-line">Wall2Wall</h3>
+					<p class="about-description">Based in Suffolk and covering East Anglia, Wall2Wall is a specialist plastering service delivering top-quality plastering and dry lining services for over 16 years. As the professionals’ choice, we cater to the commercial sector, offering a complete range of services from screeding, dry lining, insulating, coving, decorating, to wall removals. Upholding our commitment to superior workmanship, customer satisfaction, and timely delivery, we consistently set ourselves apart. Experience the Wall2Wall difference today and allow us to exceed your expectations.</p>
 					<div class="about-cta-wrapper cta-wrapper"><a href="#" class="btn btn--primary bg-m-blue text-white">Get in touch</a></div>
 					*/ ?>	
 
@@ -57,7 +57,7 @@ get_header();
 		<section class="section--cta-block bg-m-blue text-white">
 			<div class="inner">
 				<div class="ctab__heading">
-					<div class="top-line text-blue">Wall2Wall Plastering</div>
+					<div class="top-line text-blue">Wall2Wall</div>
 					<div class="bottom-line text-white">Latest Projects</div>
 				</div>
 				<div class="ctab__link-wrapper"><a href="#" class="btn btn--secondary">More Projects</a></div>

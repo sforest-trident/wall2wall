@@ -29,7 +29,7 @@
 	<header id="masthead" class="site-header">
 		<div class="inner">
 			<!-- Header > Logo -->
-			<div class="header__logo site-title site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/w2w-logo.png" /></a></div>
+			<div class="header__logo site-title site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/w2w-logo_new.png" /></a></div>
 
 			<nav id="site-navigation" class="header__nav main-navigation">
 				<button class="menu-toggle " aria-controls="primary-menu" aria-expanded="false"><i class="nav-icon icon__hamburger"></i></button>

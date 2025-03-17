@@ -20,7 +20,7 @@ get_header();
 		<section class="section--cta-block bg-m-blue text-white">
 			<div class="inner">
 				<div class="ctab__heading">
-					<div class="top-line text-blue">Wall2Wall Plastering</div>
+					<div class="top-line text-blue">Wall2Wall</div>
 					<div class="bottom-line text-white">Get in touch</div>
 				</div>
 				<div class="ctab__link-wrapper"><a href="#" class="btn btn--secondary">Contact</a></div>

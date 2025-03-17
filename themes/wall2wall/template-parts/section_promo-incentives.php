@@ -2,7 +2,7 @@
     <div class="inner incentives-block">
         <div class="ib__col">
             <div class="ib__heading">
-                <span class="top-line">Wall2Wall Plastering</span>
+                <span class="top-line">Wall2Wall</span>
                 <span class="bottom-line">Why Choose Us?</span>
             </div>
             <div class="ib__content">
