@@ -45,7 +45,7 @@
     // H2 / Primary heading
     --e-global-typography-h2-font-family: #{map-get($site-typography, 'h2-font-family')};
     --e-global-typography-h2-font-weight: #{map-get($site-typography, 'h2-font-weight')};
-    --e-global-typography-h2-font-size: #{map-get($site-typography, 'h2-font-size')};
+    --e-global-typography-h2-font-size: #{map-get($site-typography, 'h2-font-size')}; 
     --e-global-typography-h2-line-height: #{map-get($site-typography, 'h2-line-height')};
     --e-global-typography-h2-font-size_lg: #{map-get($site-typography, 'h2-font-size_lg')};
     --e-global-typography-h2-line-height_lg: #{map-get($site-typography, 'h2-line-height_lg')};
@@ -61,14 +61,17 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
 
 // Core
+@import "_components/_buttons";
 @import "_core/_breakpoints";
-@import "_core/_typography";
+@import "_core/_typography"; 
+@import "_core/_image";
 @import "_core/_layout";
 @import "_core/_core";
+@import "_core/_forms";
 
 // Components 
 @import "_components/_header";
-@import "_components/_buttons";
+
 @import "_components/_footer";
 @import "_components/_sections";
 @import "_components/_hero";
@@ -78,6 +81,13 @@
 @import "_components/features-grid";
 @import "_components/incentives-block";
 @import "_components/image-grid";
+@import "_components/feature-showcase";
+@import "_components/service-process";
+@import "_components/project-showcase";
+@import "_components/meet-the-team";
+@import "_components/flags";
+@import "_components/pagination";
+@import "_components/content-sidebar";
 
 // Pages
 @import "_pages/home";

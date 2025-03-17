@@ -1,0 +1,8 @@
+@mixin _greyscale($value: 1){
+	filter: grayscale($value);
+}
+
+
+.greyscale{
+    @include _greyscale();
+}

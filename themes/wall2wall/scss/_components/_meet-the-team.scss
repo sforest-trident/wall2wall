@@ -1,0 +1,90 @@
+.section__meet-the-team{
+    .inner{
+        @include container($h-gutter__base: 40px);
+    }
+
+    .content__heading{
+        padding-bottom: 1em;
+    }
+}
+
+.meet-the-team{
+    $_grid-gap: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: $_grid-gap;
+
+    @include breakpoint($md){
+        display: grid;
+        grid-template-columns: repeat(4, minmax(calc(25% - $_grid-gap), 1fr));
+        grid-template-rows: repeat(1, calc(12rem - $_grid-gap));
+    }
+
+    @include breakpoint($lg){
+        grid-template-rows: repeat(1, calc(15rem - $_grid-gap));
+    }
+    
+
+    .mtt{
+        &__item{
+            position: relative;
+            overflow: hidden;
+
+            .item{
+                &__img-block{
+                    display: flex; // Whitespace fix.
+
+                    @include breakpoint($md){
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+
+                    img{
+                        width: 100%;
+                        max-width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        max-height: 300px;
+
+                        @include _greyscale();
+                    }
+                }
+
+                &__details{
+                    background-color: map-get($site-colours, 'l-blue');
+                    color: white;
+
+                    display: inline-flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 2;
+                    min-width: 10rem;
+                    max-width: 80%;
+                }
+
+                &__name{
+                    font-size: 1rem;
+                    font-weight: 800;
+                    line-height: 1.25rem;
+                    color: map-get($site-colours, 'blue');
+                    word-wrap: break-word;
+                    text-transform: uppercase;
+                }
+
+                &__role{
+                    font-size: 0.85rem;
+                    line-height: 1.25rem;
+                    word-wrap: break-word;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

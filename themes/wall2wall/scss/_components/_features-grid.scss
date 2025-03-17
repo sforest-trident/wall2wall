@@ -1,22 +1,61 @@
 .features-grid{
     display: grid;
-    grid-template-columns: repeat(2, minmax(50vw, 1fr));
-    grid-template-rows: repeat(2, minmax(50vw, 1fr));
+
+    @include breakpoint($md-down){
+        grid-template-columns: repeat(2, minmax(50vw, 1fr));
+        grid-template-rows: repeat(2, minmax(50vw, 1fr));
+    }
+
+    @include breakpoint($md){
+        grid-template-columns: repeat(4, minmax(25vw, 1fr));
+    }
+
+
 
     .fpg{
         &__item{
             position: relative;
             overflow: hidden;
+            transition: transform 0.2s ease;
+
+            &:nth-child(n+5){
+                display: none;
+            }
+
+            &:hover{
+                .fpg__img{
+                    transform: scale(1.1);
+                    transition: transform 0.5s ease;
+                }
+
+                .fpg__wrapper:before{
+                    background-color: rgba(0,0,0,0.3);
+                }
+            }
         }
 
         &__wrapper{
             display: flex;
             width: 100%;
             height: 100%;
+            position: relative;
+            z-index: 1;
+
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.5);
+                z-index: 2;
+            }
         }
         
         &__title{
             position: absolute;
+            z-index: 3;
             bottom: 10px;
             left: 10px;
             transform: rotate(180deg);
@@ -31,6 +70,13 @@
 
         &__img{
             height: 50vw;
+            object-fit: cover;
+            object-position: center;
+            max-width: 100%;
+
+            @include breakpoint($md){
+                height: 35vw;
+            }
         }
         
     }

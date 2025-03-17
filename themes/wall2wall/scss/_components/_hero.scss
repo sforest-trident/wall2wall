@@ -13,6 +13,10 @@
         background-position: center center;
         background-size: cover;
 
+        @include breakpoint($lg){
+            height: 90vh;
+        }
+
         &:before{
             content: '';
             position: absolute;
@@ -38,11 +42,31 @@
     .hero{
         &__content{
             position: relative;
+            top: -3rem;
             z-index: 5;
             pointer-events: all;
 
             @include breakpoint($md-down){
                 width: 60vw;
+            }
+
+            @include breakpoint($md){
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+
+        &__title{
+            max-width: 15rem;
+
+            @include breakpoint($lg){
+                font-size: 5rem;
+                max-width: 740px;
+                line-height: 6rem;
+                padding: unset;
+                margin: unset;
+                max-width: 30rem;
             }
         }
 
@@ -50,11 +74,26 @@
             display: none;
 
             @include breakpoint($md){
+                display: block;
+
                 ul{
                     display: flex;
                     gap: 1rem;
+
                     li{
-                        list-style: disc;
+                        list-style: none;
+                        position: relative;
+                        padding-right: 0.5rem;
+
+                        &:after{
+                            content: '•';
+                            display: block;
+                            position: absolute;
+                            right: -0.5rem;
+                            top: 0;
+                            width: 0.5rem;
+                            color: map-get($site-colours, 'l-blue');
+                        }
                     }
                 }
             }
@@ -63,6 +102,21 @@
         &__cta-wrapper{
             .btn{
                 display: inline-block;
+
+                @include breakpoint($md){
+                    @include padding-x(3rem);
+
+                }
+            }
+        }
+    }
+
+    .front-page &{
+        .hero{
+            &__title{
+                @include breakpoint($md){
+                    max-width: 45rem;
+                }
             }
         }
     }

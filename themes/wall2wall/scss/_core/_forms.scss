@@ -1,1 +1,93 @@
-﻿
+﻿.user-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 0 0.25rem;
+    gap: 1rem;
+    
+    .form{
+        $_inline-row-gap: 2rem;
+        
+        &-row{
+            display: flex;
+            flex-direction: row;
+            gap: $_inline-row-gap;
+            justify-content: space-between;
+
+            @include breakpoint($md){
+                width: 100%;
+            }
+
+        }
+
+        &-group{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            border-bottom: 1px solid #000;
+            padding: 0.2rem 0;
+            margin-bottom: 0.5rem;
+            justify-content: space-between;
+            flex: 1 0 calc(50% - $_inline-row-gap);
+
+            @include breakpoint($md){
+                flex-direction: row;
+                gap: 0.5rem;
+            }
+
+            &:not(.inline){
+                width: 100%;
+            }
+
+            &.inline{
+                flex-direction: row;
+                gap: 0.5rem;
+            }
+        }
+
+    }
+
+    label{
+        font-size: 0.85rem;
+
+        @include breakpoint($md){
+              
+        }
+    }
+    input,
+    textarea{
+        border-color: transparent;
+        background-color: transparent;
+
+        &:focus{
+            border-color: transparent;
+            background-color: transparent;
+        }
+
+        @include breakpoint($md){
+            display: flex;
+            flex: 1 1 auto;
+        }
+    }
+
+    textarea{
+        
+        @include breakpoint($md-down){
+            width: 60vw;
+            min-width: 10rem;
+        }
+    }
+
+    input[type="submit"]{        
+        @include btn-primary();
+        margin-top: 1rem;
+
+        @include breakpoint($md-down){
+            width: 100%;
+        }
+
+        @include breakpoint($md){
+            flex: unset;
+        }
+    }
+}

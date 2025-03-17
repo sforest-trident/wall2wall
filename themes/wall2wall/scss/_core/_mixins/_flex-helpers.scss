@@ -9,8 +9,13 @@
 			flex-direction: column !important;
 		}
 
+		// Basis
 		&-basis-100 {
 			flex-basis: 100% !important;
+		}
+
+		&-basis-auto {
+			flex-basis: auto !important;
 		}
 
 		&-center-all {
@@ -23,6 +28,7 @@
 		}
 	}
 
+	// Justify content
 	#{if(&, '&', '')}#{$prefix}justify-content {
 		&-between {
 			justify-content: space-between !important;
@@ -37,6 +43,7 @@
 		}
 	}
 
+	// Align items
 	#{if(&, '&', '')}#{$prefix}align-items {
 		&-center {
 			align-items: center !important;

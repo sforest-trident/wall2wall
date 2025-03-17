@@ -45,3 +45,22 @@ main {
 		//padding-top: 4rem;
 	}
 }
+
+
+.col-wrapper{
+	@include breakpoint($md){
+		display: flex;
+		width: 100%;
+
+		.col{
+			flex: 1 0 50%;
+			max-width: 50%;
+
+			&.no-size{
+				flex: 0 0 auto;
+				max-width: unset;
+			}
+		}
+	}
+}
+

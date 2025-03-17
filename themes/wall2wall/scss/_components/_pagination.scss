@@ -1,0 +1,55 @@
+.pagination{
+
+    &.bullet-list{
+        ul{
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+
+            li{
+                position: relative;
+                font-size: 0;
+                display: flex;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid transparent;
+
+                &:before{
+                    content: $dot-character;
+                    display: block;
+                    color: black;
+                    font-size: 1.25rem;
+                    position: absolute;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                a{
+                    display: block;
+                    width: 100%;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &:hover,
+                &:focus{
+                    border-color: #ccc;
+                }
+
+
+                &.selected{
+                    border-color: map-get($site-colours, 'l-blue');
+
+                    &:before{
+                        font-size: 2rem;
+                        color: map-get($site-colours, 'l-blue');
+                    }
+                }
+            }
+        }
+    }
+}

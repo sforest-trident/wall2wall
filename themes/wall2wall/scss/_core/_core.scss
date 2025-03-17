@@ -15,55 +15,51 @@
 
 
 // SM breakpoint
-/* -- Uncomment as required --
+/* -- Uncomment as required -- */
 .sm {
 	@include breakpoint($md-down) {
 		@include _all-paddings('-');
 		@include _all-margins('-');
 
-		@include _display-helpers('-');
-		@include _flex-helpers('-');
-		@include _content-helper-classes('-');
+		//@include _display-helpers('-');
+		//@include _flex-helpers('-');
+		//@include _content-helper-classes('-');
 	}
-
-	@include custom-offsets('sm');
 }
-*/
+
 
 // MD breakpoint
-/* -- Uncomment as required --
+/* -- Uncomment as required -- */
 .md {
 	@include breakpoint($md) {
 		@include _all-paddings('-');
 		@include _all-margins('-');
 
-		@include _display-helpers('-');
-		@include _flex-helpers('-');
+		//@include _display-helpers('-');
+		//@include _flex-helpers('-');
 	}
-
-	@include custom-offsets('md');
 }
-*/
 
 // LG breakpoint
-/* -- Uncomment as required --
+/* -- Uncomment as required -- */
 .lg {
 	@include breakpoint($lg) {
 		@include _all-paddings('-');
 		@include _all-margins('-');
 
-		@include _display-helpers('-');
-		@include _flex-helpers('-');
+		//@include _display-helpers('-');
+		//@include _flex-helpers('-');
 	}
 }
-*/
+
 
 // XL breakpoint
-/* -- Uncomment as required --
+/* -- Uncomment as required -- */
+
 .xxl {
-	@include custom-offsets('xxl');
+	//@include custom-offsets('xxl');
 }
-*/
+
 
 
 

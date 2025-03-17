@@ -19,22 +19,33 @@
 	}
 
 	@include breakpoint($md) {
-		padding-left: $h-gutter__md;
-		padding-right: $h-gutter__md;
 
 		@if($v-gutter__md) {
 			padding-top: $v-gutter__md;
 			padding-bottom: $v-gutter__md;
 		}
+
+		@if($h-gutter__md) {
+			padding-left: $h-gutter__md;
+			padding-right: $h-gutter__md;
+		}@else {
+			padding-left: $breakpoint-h-gutter__md;
+			padding-right: $breakpoint-h-gutter__md;
+		}
 	}
 
 	@include breakpoint($lg) {
-		padding-left: $h-gutter__lg;
-		padding-right: $h-gutter__lg;
-
 		@if($v-gutter__lg) {
 			padding-top: $v-gutter__lg;
 			padding-bottom: $v-gutter__lg;
+		}
+
+		@if($h-gutter__lg) {
+			padding-left: $h-gutter__lg;
+			padding-right: $h-gutter__lg;
+		}@else {
+			padding-left: $breakpoint-h-gutter__lg;
+			padding-right: $breakpoint-h-gutter__lg;
 		}
 	}
 
@@ -42,12 +53,18 @@
 		max-width: $container-m-width;
 		margin-left: auto !important;
 		margin-right: auto !important;
-		padding-left: $h-gutter__xl;
-		padding-right: $h-gutter__xl;
 
 		@if($v-gutter__xl) {
 			padding-top: $v-gutter__xl;
 			padding-bottom: $v-gutter__xl;
+		}
+
+		@if($h-gutter__xl) {
+			padding-left: $h-gutter__xl;
+			padding-right: $h-gutter__xl;
+		}@else {
+			padding-left: $h-gutter__xl;
+			padding-right: $h-gutter__xl;	
 		}
 	}
 }

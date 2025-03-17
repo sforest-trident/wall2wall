@@ -5,7 +5,7 @@
     width: 100%;
     position: absolute;
     z-index: 99;
-    background-color: rgba(255,255,255, 0.5);
+    //background-color: rgba(255,255,255, 0.5);
     
     .inner{
         display: flex;
@@ -17,10 +17,12 @@
         padding-left: 30px;
         padding-right: 30px;
 
+        @include breakpoint($md){
+            @include container($h-gutter__base: 40px);
+        }
+
     }
 
-
-    
     .header{
         &__logo{
             img{
@@ -29,9 +31,7 @@
         }
 
         &__nav{
-            .menu-main-menu-container{
-                display: none;
-            }
+            // For nav, see nav.scss.
         }
     }
 }

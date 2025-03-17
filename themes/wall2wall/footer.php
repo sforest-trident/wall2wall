@@ -39,9 +39,9 @@
 				</div>
 				<div class="uf__contact-block uf-col">
 					<ul>
-						<li><a href="tel:0123456789"><i class="icon icon-map-pin"></i>01234 567 890</a></li>
-						<li><a href="mailto:info@wall2wallplastering.co.uk"><i class="icon icon-map-pin"></i>info@wall2wallplastering.co.uk</a></li>
-						<li><i class="icon icon-map-pin"></i>Stowmarket, Suffolk</li>
+						<li><i class="icon icon-map-pin fas fa-phone"></i><a href="tel:0123456789">01234 567 890</a></li>
+						<li><i class="icon icon-map-pin fas fa-envelope"></i><a href="mailto:info@wall2wallplastering.co.uk">info@wall2wallplastering.co.uk</a></li>
+						<li><i class="icon icon-map-pin fas fa-location-dot"></i>Stowmarket, Suffolk</li>
 					</ul>
 				</div>
 			</div>

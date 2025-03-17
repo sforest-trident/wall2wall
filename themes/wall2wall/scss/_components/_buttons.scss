@@ -40,11 +40,14 @@ button{
 }
 
 @mixin btn($bg-colour, $text-colour, $border-colour: transparent, $text-hover-colour: $bg-colour, $bg-hover-colour: $text-colour, $border-weight: 2px, $transition: all 400ms cubic-bezier(0.39,0.5,0.15,1.36)){
+	
 	background-color: $bg-colour;
 	color: $text-colour;
-
 	border: $border-weight solid $border-colour;
 	transition: $transition;
+	min-width: 10rem;
+	text-align: center;
+	cursor: pointer;
 
 	&:hover{
 		color: $text-hover-colour;
@@ -52,26 +55,36 @@ button{
 	}
 }
 
+@mixin btn-primary(){
+	@include btn($bg-colour: map-get($site-colours, 'm-blue'), $text-colour: white, $bg-hover-colour: map-get($site-colours, 'blue'), $text-hover-colour: white);
+	text-transform: uppercase;
+	font-size: 13px;
+	padding: 0.5rem 1rem;
+	border-radius: 2rem;
+	text-decoration: none;
+	display: inline-block;
+}
+
+@mixin btn-secondary(){
+	@include btn($bg-colour: map-get($site-colours, 'blue'), $text-colour: white);
+	text-transform: uppercase;
+	font-size: 13px;
+	padding: 0.5rem 1rem;
+	border-radius: 2rem;
+	text-decoration: none;
+	display: inline-block;
+}
+
+// --- CSS output buttons classes.
+
 .btn{
 
 	&--primary{
-		@include btn($bg-colour: map-get($site-colours, 'm-blue'), $text-colour: white);
-		text-transform: uppercase;
-		font-size: 13px;
-		padding: 0.75rem 1.25rem;
-		border-radius: 2rem;
-		text-decoration: none;
-		display: inline-block;
+		@include btn-primary();
 	}
 
 	&--secondary{
-		@include btn($bg-colour: map-get($site-colours, 'blue'), $text-colour: white);
-		text-transform: uppercase;
-		font-size: 13px;
-		padding: 0.75rem 1.25rem;
-		border-radius: 2rem;
-		text-decoration: none;
-		display: inline-block;
+		@include btn-secondary();
 	}
 }
 

@@ -29,6 +29,10 @@
 			max-width: #{$iteration}rem;
 		}
 	}
+
+	.mw-unset {
+		max-width: unset;
+	}
 }
 
 

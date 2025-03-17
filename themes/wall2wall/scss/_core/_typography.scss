@@ -24,12 +24,15 @@ $top-line-placeholder: 'Wall2Wall Plastering';
 
 	.top-line{
 		font-size: 0.75rem;
+		line-height: 0.75rem;
 		font-weight: 400;
 		letter-spacing: 2px;
 	}
 
 	.bottom-line{
-		
+		//Reset defaults
+		margin: unset;
+		padding: unset;
 	}
 }
 
@@ -50,7 +53,9 @@ $top-line-placeholder: 'Wall2Wall Plastering';
 	}
 
 	.bottom-line{
-		
+		//Reset defaults
+		margin: unset;
+		padding: unset;
 	}
 }
 
@@ -71,6 +76,19 @@ h1 {
 h2{
 	@include _h2();
 }
+
+
+
+.stacked-heading{
+	@include _stacked-heading();
+
+	.bottom-line{
+		font-size: 1.5rem;
+		font-weight: 800;
+	}
+}
+
+
 
 
 

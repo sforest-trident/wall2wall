@@ -1,0 +1,11 @@
+.flag{
+    &.residential{
+        background-color: map-get($site-colours, 'l-blue') !important;
+        color: white;
+    }
+
+    &.commercial{
+        background-color: map-get($site-colours, 'green') !important;
+        color: white;
+    }
+}

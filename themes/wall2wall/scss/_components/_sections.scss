@@ -1,14 +1,21 @@
 .section{
 
-    &--content{
+    &--content,
+    &__content{
         .inner{
             @include container($h-gutter__base: 40px);
             padding-bottom: 3rem;
+
+            @include breakpoint($md){
+                padding-top: 5em;
+            }
         }
 
         .content{
 
             &__heading{
+                text-transform: uppercase;
+                
                 @include _stacked-heading();
             }
 
@@ -17,8 +24,143 @@
                 @include breakpoint($md-down){
                     display: none;
                 }
+
+                overflow: hidden;
+                max-width: 100%;
+                padding-left: 1rem;
+
+                img{
+                    max-width: 100%;
+                }
+            }
+
+            &__wrapper{
+                &.col{
+                    padding-right: 3rem;
+                }
             }
         }
+    }
+
+    &__page-intro{
+        padding-top: 2rem; 
+
+        @include breakpoint($md) {
+            padding-top: 3rem;
+
+            .col-wrapper{
+                justify-content: space-between;
+            }
+
+            .col{
+                width: unset;
+            }
+            
+            .pi{
+                &__title{
+                    margin: unset;
+                    max-width: 20rem;
+                    text-transform: capitalize;
+                    color: map-get($site-colours, 'blue');
+                    padding: 1rem 0;
+                    
+                }
+
+                &__body{
+                    min-height: 5rem;                    
+                    width: unset;
+                    flex: 0 1 auto;
+                    width: 30rem;
+                    border-left: 2px solid map-get($site-colours, 'l-blue');
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+
+    &__wall-grid{
+        
+    }
+
+    &__featured-project-grid{
+        .inner{
+            @include container($h-gutter__base: 40px);
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+
+            @include breakpoint($md){
+                padding-top: 5em;
+            }
+        }
+
+        .fpg{
+            &__body{
+                @include breakpoint($md-down){
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__site-plan{
+        .inner{
+            @include container($h-gutter__base: 40px);
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+
+            @include breakpoint($md){
+                padding-top: 5em;
+            }
+        }
+
+        .site-plan{
+            @include breakpoint($md){
+                gap: 3rem;
+                justify-content: space-between;
+            }
+            
+        }
+
+        .sp{
+            &__content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 2rem;
+            }
+
+            &__img-block{
+                display: flex;
+                justify-content: flex-end;
+                margin: unset;
+                
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    &__contact-form{
+
+        .inner{
+            margin-bottom: 3rem;
+        }
+
+        .col-wrapper{
+            gap: 3rem;
+        }
+
+        .content-body{
+            @include breakpoint($md){
+                width: calc(70% - 3rem);
+            }
+
+            .user-form{
+                padding-top: 2rem;
+            }
+        }
+
     }
 
     &--client-grid{
@@ -126,6 +268,12 @@
 
             display: flex;
             justify-content: space-between;
+
+            @include breakpoint($md-down){
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
         }
 
         .ctab{
@@ -136,6 +284,13 @@
                 .bottom-line{
                     font-size: 1.5rem;
                     font-weight: 800;
+                }
+            }
+
+            &__link-wrapper{
+
+                @include breakpoint($md-down){
+                    margin-top: 1rem;
                 }
             }
         }
@@ -150,6 +305,11 @@
         .inner{
             @include container($h-gutter__base: 40px);
             @include padding-y(2rem);
+
+            @include breakpoint($md){
+                flex-direction: row;
+                @include padding-y(4rem);
+            }
         }
 
         .ib{
@@ -164,7 +324,9 @@
         }
     }
 
-    &--reviews{
+    &--testimonials{
+        margin-bottom: 2rem;
+        
         .inner{
             @include container($h-gutter__base: 40px);
             @include padding-y(2rem);
@@ -178,6 +340,12 @@
                 font-weight: 800;
             }
         }
+    }
+
+
+    // Color variations
+    &__grey{
+        background-color: map-get($site-colours, 'grey');
     }
 
 }
